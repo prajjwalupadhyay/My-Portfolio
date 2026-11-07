@@ -506,6 +506,12 @@ header .navbar ul li a:hover {
 .skills .container .bar .info i {
   font-size: 4rem;
 }
+.skills .container .bar .info svg,
+.skills .container .bar .info img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
@@ -652,18 +658,35 @@ header .navbar ul li a:hover {
   color: rgb(255, 230, 0);
 }
 .work .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 .work .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
   height: 30rem;
+}
+
+@media (max-width: 991px) {
+  .work .box-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .work .box-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+  }
 }
 .work .box-container .box img {
   height: 100%;

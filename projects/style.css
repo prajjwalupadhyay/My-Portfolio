@@ -195,37 +195,42 @@ header .navbar ul li a:hover{
   background-color: #fff;
   color: #000;
 }
-.work .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  margin: 2rem;
+.work .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
-.work .box-container .box{
-  flex:1 1 30rem;
-  border-radius: .5rem;
-  box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
+.work .box-container .grid-item {
+  width: 100%;
+}
+.work .box-container .box {
+  width: 100%;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.3);
   position: relative;
-  overflow:hidden;
-  height:30rem;
+  overflow: hidden;
+  height: 30rem;
   background: #fff;
   border: none;
 }
-.work .box-container .box img{
+.work .box-container .box img {
   height: 100%;
-  width:100%;
+  width: 100%;
   object-fit: cover;
 }
-.work .box-container .box .content{
+.work .box-container .box .content {
   height: 100%;
-  width:100%;
+  width: 100%;
   position: absolute;
-  top:85%; left:0;
-  background:rgba(255, 255, 255, 0.9);
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
 }
-.work .box-container .box .content .tag{
+.work .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -235,10 +240,10 @@ header .navbar ul li a:hover{
   padding-left: 1rem;
   background: #ffd900;
 }
-.work .box-container .box .content .tag h3{
+.work .box-container .box .content .tag h3 {
   font-size: 2rem;
 }
-.work .box-container .box:hover .content{
+.work .box-container .box:hover .content {
   top: 25%;
 }
 .work .desc {
@@ -247,38 +252,48 @@ header .navbar ul li a:hover{
   flex-direction: column;
   justify-content: center;
 }
-.work .desc p{
+.work .desc p {
   font-size: 1.5rem;
 }
-.work .desc .btns{
+.work .desc .btns {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
 }
-.work .desc .btns .btn{
+.work .desc .btns .btn {
   line-height: 0;
   display: inline;
   padding: 1.5rem 2.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   color: #fff;
   background: rgb(12, 12, 12);
   margin-right: 2rem;
 }
-.work .desc .btns .btn:hover{
+.work .desc .btns .btn:hover {
   background: #310ae0f5;
 }
 
-@media screen and (max-width: 450px) {
-  .work .button-group{
+@media (max-width: 991px) {
+  .work .box-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .work .button-group {
     width: 100%;
   }
-  .work .box-container{
-    margin: 0rem;
+  .work .box-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
   }
-  .work .box-container .grid-item .box{
-    width: 95% !important;
+  .work .box-container .grid-item .box {
+    width: 100% !important;
   }
 }
 

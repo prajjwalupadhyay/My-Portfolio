@@ -100,10 +100,26 @@ function showSkills(skills) {
   let skillsContainer = document.getElementById("skillsContainer");
   let skillHTML = "";
   skills.forEach((skill) => {
+    let iconElement = "";
+    if (skill.icon) {
+      let iconName = skill.icon;
+      let match = skill.icon.match(/name=["']([^"']+)["']/);
+      if (match) {
+        iconName = match[1];
+      }
+
+      if (window.TechStackIcons && window.TechStackIcons[iconName]) {
+        iconElement = window.TechStackIcons[iconName];
+      } else if (skill.icon.startsWith("http") || skill.icon.includes("/") || skill.icon.includes(".")) {
+        iconElement = `<img src="${skill.icon}" alt="${skill.name || 'skill'}" />`;
+      } else {
+        iconElement = `<i class="${skill.icon}"></i>`;
+      }
+    }
     skillHTML += `
         <div class="bar">
               <div class="info">
-                <img src=${skill.icon} alt="skill" />
+                ${iconElement}
                 <span>${skill.name}</span>
               </div>
             </div>`;
@@ -115,12 +131,23 @@ function showProjects(projects) {
   let projectsContainer = document.querySelector("#work .box-container");
   let projectHTML = "";
   projects
-    .slice(0, 10)
-    .filter((project) => project.category != "android")
-    .forEach((project) => {
+    .slice(0, 6)
+    .forEach((project, index) => {
+      let imgSrc = "./assets/images/cmsoon.png";
+      if (project.image && project.image.trim() !== "") {
+        if (project.image.startsWith("http") || project.image.startsWith("/") || project.image.startsWith("./")) {
+          imgSrc = project.image;
+        } else {
+          imgSrc = `./assets/images/projects/${project.image}.png`;
+        }
+      }
+      let projectId = project.id || index;
+      let viewLink = `./projects/details.html?id=${projectId}`;
+      let codeLink = (project.links && project.links.code && project.links.code.trim() !== "") ? project.links.code : "#";
+
       projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="${imgSrc}" alt="${project.name || 'project'}" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -128,8 +155,8 @@ function showProjects(projects) {
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <a href="${viewLink}" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="${codeLink}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>

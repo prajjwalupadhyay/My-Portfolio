@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details | Portfolio Prajjwal Upadhyay</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-png"
+    />
+    <link rel="stylesheet" href="./details.css" />
+  </head>
+  <body oncontextmenu="return false">
+    <!-- Header starts -->
+    <header class="header">
+      <a href="/" class="logo"><i class="fab fa-node-js"></i> Prajjwaljs</a>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main project details container starts -->
+    <main class="project-details-section">
+      <!-- Back button with < sign on left corner below icon -->
+      <div class="back-wrapper">
+        <a href="javascript:history.back()" class="back-btn" id="back-btn">
+          <i class="fas fa-chevron-left"></i>
+          <span>Back</span>
+        </a>
+      </div>
+
+      <div class="details-container">
+        <!-- Left Column: Title, Category, Description, Language Meter & Actions -->
+        <div class="details-content card-glass">
+          <div class="project-header">
+            <span class="category-badge" id="project-category">Category</span>
+            <h1 class="project-title" id="project-title">Loading Project...</h1>
+          </div>
+
+          <div class="project-description-box">
+            <h3><i class="fas fa-info-circle"></i> About Project</h3>
+            <p id="project-desc">Fetching project details...</p>
+          </div>
+
+          <!-- GitHub-style Language Usage Meter -->
+          <div class="language-meter-box">
+            <h3><i class="fas fa-code"></i> Languages Used</h3>
+            <div class="meter-bar" id="meter-bar">
+              <!-- Dynamic segments -->
+            </div>
+            <div class="meter-legend" id="meter-legend">
+              <!-- Dynamic legend dots -->
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="action-btns">
+            <a href="#" target="_blank" id="live-demo-btn" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="#" target="_blank" id="view-code-btn" class="btn btn-secondary">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: 4s Image Slideshow -->
+        <div class="details-media card-glass">
+          <h3><i class="fas fa-images"></i> Project Preview</h3>
+
+          <div class="slideshow-wrapper" id="slideshow-wrapper">
+            <div class="slideshow-container" id="slideshow-container">
+              <!-- Dynamic slides -->
+            </div>
+
+            <!-- Slide Controls -->
+            <button class="slide-control prev" id="prev-slide" aria-label="Previous Slide">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slide-control next" id="next-slide" aria-label="Next Slide">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Indicators -->
+            <div class="slide-indicators" id="slide-indicators"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main project details container ends -->
+
+    <!-- Scroll top -->
+    <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./details.js"></script>
+  </body>
+</html>

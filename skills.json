@@ -1,71 +1,106 @@
 [
   {
-    "name": "ReactJS",
-    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
-  },
-  {
-    "name": "NodeJS",
-    "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
-  },
-
-  {
-    "name": "Firebase",
-    "icon": "https://img.icons8.com/color/48/000000/firebase.png"
-  },
-  {
     "name": "Android",
-    "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+    "icon": "https://skillicons.dev/icons?i=androidstudio"
   },
   {
-    "name": "TailwindCSS",
-    "icon": "https://img.icons8.com/color/48/tailwind_css.png"
+    "name": "Antigravity",
+    "icon": "<StackIcon name=\"antigravity\" >"
   },
   {
     "name": "Bootstrap",
-    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-  },
-  {
-    "name": "HTML5",
-    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    "icon": "https://skillicons.dev/icons?i=bootstrap"
   },
   {
     "name": "CSS3",
-    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    "icon": "https://skillicons.dev/icons?i=css"
   },
   {
-    "name": "JavaScript",
-    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    "name": "Figma",
+    "icon": "https://skillicons.dev/icons?i=figma"
   },
   {
-    "name": "Java",
-    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    "name": "Firebase",
+    "icon": "https://skillicons.dev/icons?i=firebase"
   },
   {
-    "name": "PHP",
-    "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
-  },
-  {
-    "name": "Python",
-    "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-  },
-  {
-    "name": "MongoDB",
-    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
-  },
-  {
-    "name": "MySQL",
-    "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
-  },
-  {
-    "name": "Netlify",
-    "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    "name": "Gemini",
+    "icon": "https://skillicons.dev/icons?i=gcp"
   },
   {
     "name": "Git",
-    "icon": "https://img.icons8.com/color/48/000000/git.png"
+    "icon": "https://skillicons.dev/icons?i=git"
   },
   {
     "name": "GitHub",
-    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    "icon": "https://skillicons.dev/icons?i=github"
+  },
+  {
+    "name": "HTML5",
+    "icon": "https://skillicons.dev/icons?i=html"
+  },
+  {
+    "name": "Java",
+    "icon": "https://skillicons.dev/icons?i=java"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://skillicons.dev/icons?i=js"
+  },
+  {
+    "name": "Laravel",
+    "icon": "https://skillicons.dev/icons?i=laravel"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "https://skillicons.dev/icons?i=mongodb"
+  },
+  {
+    "name": "MySQL",
+    "icon": "https://skillicons.dev/icons?i=mysql"
+  },
+  {
+    "name": "Netlify",
+    "icon": "https://skillicons.dev/icons?i=netlify"
+  },
+  {
+    "name": "Next JS",
+    "icon": "https://skillicons.dev/icons?i=nextjs"
+  },
+  {
+    "name": "NodeJS",
+    "icon": "https://skillicons.dev/icons?i=nodejs"
+  },
+  {
+    "name": "PHP",
+    "icon": "https://skillicons.dev/icons?i=php"
+  },
+  {
+    "name": "Postgres SQL",
+    "icon": "https://skillicons.dev/icons?i=postgres"
+  },
+  {
+    "name": "Postman",
+    "icon": "https://skillicons.dev/icons?i=postman"
+  },
+  {
+    "name": "Prisma",
+    "icon": "https://skillicons.dev/icons?i=prisma"
+  },
+  {
+    "name": "Python",
+    "icon": "https://skillicons.dev/icons?i=py"
+  },
+  {
+    "name": "ReactJS",
+    "icon": "https://skillicons.dev/icons?i=react"
+  },
+  {
+    "name": "TailwindCSS",
+    "icon": "https://skillicons.dev/icons?i=tailwind"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "https://skillicons.dev/icons?i=ts"
   }
 ]
