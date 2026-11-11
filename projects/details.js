@@ -3,6 +3,16 @@ $(document).ready(function () {
   const urlParams = new URLSearchParams(window.location.search);
   const projectIdParam = urlParams.get("id");
 
+  // Back button handler with fallback
+  $("#back-btn").on("click", function (e) {
+    e.preventDefault();
+    if (window.history.length > 1 && document.referrer) {
+      window.history.back();
+    } else {
+      window.location.href = "/#work";
+    }
+  });
+
   // Scroll to top button toggle
   $(window).on("scroll load", function () {
     if (window.scrollY > 60) {
@@ -128,10 +138,10 @@ $(document).ready(function () {
     let barHTML = "";
     let legendHTML = "";
 
-    languages.forEach((lang) => {
-      barHTML += `<div class="meter-segment" style="width: 0%; background-color: ${lang.color};" title="${lang.name}: ${lang.percent}%" data-percent="${lang.percent}%"></div>`;
+    languages.forEach((lang, idx) => {
+      barHTML += `<div class="meter-segment" data-lang-idx="${idx}" style="width: 0%; background-color: ${lang.color};" title="${lang.name}: ${lang.percent}%" data-percent="${lang.percent}%"></div>`;
       legendHTML += `
-        <div class="legend-item">
+        <div class="legend-item" data-lang-idx="${idx}">
           <span class="legend-dot" style="background-color: ${lang.color};"></span>
           <span class="legend-name">${lang.name}</span>
           <span class="legend-percent">${lang.percent}%</span>
@@ -141,6 +151,24 @@ $(document).ready(function () {
 
     $meterBar.html(barHTML);
     $meterLegend.html(legendHTML);
+
+    // Interactive highlight between legend and meter segments
+    $meterLegend.find(".legend-item").hover(
+      function () {
+        const idx = $(this).attr("data-lang-idx");
+        $meterBar.find(".meter-segment").css("opacity", "0.35");
+        $meterBar.find(`.meter-segment[data-lang-idx="${idx}"]`).css({
+          opacity: "1",
+          filter: "brightness(1.3)",
+        });
+      },
+      function () {
+        $meterBar.find(".meter-segment").css({
+          opacity: "1",
+          filter: "none",
+        });
+      }
+    );
 
     // Animate meter bars on page load
     setTimeout(() => {

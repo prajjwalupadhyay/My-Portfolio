@@ -1,43 +1,21 @@
 [
   {
-    "id": "portfolio-website",
-    "name": "Portfolio Website",
-    "desc": "Personal portfolio website built with HTML5, CSS3, JavaScript, and dynamic tech stack icon components.",
-    "fullDesc": "A modern, highly responsive personal portfolio website showcasing projects, skills, education, and contact details. Features dynamic skill cards powered by tech-stack-icons, smooth navigation, ScrollReveal animations, VanillaTilt interactive 3D card tilt effects, and an integrated email messaging system.",
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "id": "sign-language-translator",
+    "name": "Sign Language Translator",
+    "desc": "Real-time sign language recognition and translation system converting hand gestures into readable text and speech.",
+    "fullDesc": "Sign Language Translator is an assistive AI and computer vision application designed to bridge the communication gap for the hearing and speech impaired. It captures live hand gestures through a camera feed, processes hand landmarks in real time, and translates sign language alphabets and phrases into text and speech output.",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
     "images": [
-      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
     ],
     "category": "basicweb",
     "languages": [
-      { "name": "JavaScript", "percent": 54.2, "color": "#f1e05a" },
-      { "name": "HTML", "percent": 32.8, "color": "#e34c26" },
-      { "name": "CSS", "percent": 13.0, "color": "#563d7c" }
-    ],
-    "links": {
-      "view": "https://github.com/prajjwalupadhyay/My-Portfolio",
-      "code": "https://github.com/prajjwalupadhyay/My-Portfolio"
-    }
-  },
-  {
-    "id": "mern-ecommerce",
-    "name": "MERN E-Commerce Store",
-    "desc": "Full-stack online store with product catalog, shopping cart, user auth, and Stripe payment gateway.",
-    "fullDesc": "An end-to-end full stack online shopping platform built with the MERN stack (MongoDB, Express, React, Node.js). Features include Redux Toolkit state management, JWT user authentication, Stripe payment processing, admin management dashboard, customer order tracking, and product search with multi-faceted filtering.",
-    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    "images": [
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80"
-    ],
-    "category": "mern",
-    "languages": [
-      { "name": "JavaScript", "percent": 68.5, "color": "#f1e05a" },
-      { "name": "TypeScript", "percent": 18.2, "color": "#3178c6" },
-      { "name": "CSS", "percent": 9.8, "color": "#563d7c" },
-      { "name": "HTML", "percent": 3.5, "color": "#e34c26" }
+      { "name": "Python", "percent": 64.5, "color": "#3572A5" },
+      { "name": "JavaScript", "percent": 18.3, "color": "#f1e05a" },
+      { "name": "HTML", "percent": 10.2, "color": "#e34c26" },
+      { "name": "CSS", "percent": 7.0, "color": "#563d7c" }
     ],
     "links": {
       "view": "https://github.com/prajjwalupadhyay",
@@ -45,21 +23,66 @@
     }
   },
   {
-    "id": "task-manager-app",
-    "name": "Task Flow Manager",
-    "desc": "Kanban-style task management web app with drag-and-drop boards, deadlines, and real-time collaboration.",
-    "fullDesc": "Task Flow Manager is a collaborative task and project management suite inspired by Trello and Jira. Built with React, Node.js, Socket.io, and TailwindCSS, it supports real-time board updates, task priority tagging, file attachments, comment threads, user assignment, and activity history tracking.",
-    "image": "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=800&q=80",
+    "id": "laravel-online-shop",
+    "name": "Laravel Online Shop",
+    "desc": "Full-stack e-commerce platform built with Laravel featuring product management, shopping cart, checkout, and order tracking.",
+    "fullDesc": "Laravel Online Shop is a complete e-commerce web application built using the Laravel PHP framework and MySQL. It includes dynamic product catalogs, category filtering, user authentication, session-based shopping cart, order management, payment integration, and a dedicated admin dashboard for managing inventory and customers.",
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
     "images": [
-      "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618401471353-b98aedd04e11?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "category": "lamp",
+    "languages": [
+      { "name": "PHP", "percent": 62.4, "color": "#4F5D95" },
+      { "name": "Blade", "percent": 21.6, "color": "#f7523f" },
+      { "name": "JavaScript", "percent": 9.5, "color": "#f1e05a" },
+      { "name": "CSS", "percent": 6.5, "color": "#563d7c" }
+    ],
+    "links": {
+      "view": "https://github.com/prajjwalupadhyay",
+      "code": "https://github.com/prajjwalupadhyay"
+    }
+  },
+  {
+    "id": "hello-doc-1-0",
+    "name": "Hello-Doc-1.0",
+    "desc": "Healthcare and doctor appointment booking platform connecting patients with medical professionals online.",
+    "fullDesc": "Hello-Doc-1.0 is a digital healthcare management and doctor consultation web application. It enables patients to browse medical specialists, book and manage appointments, access health records, and communicate with doctors through a responsive, user-friendly interface.",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "category": "basicweb",
+    "languages": [
+      { "name": "JavaScript", "percent": 48.0, "color": "#f1e05a" },
+      { "name": "HTML", "percent": 31.5, "color": "#e34c26" },
+      { "name": "CSS", "percent": 20.5, "color": "#563d7c" }
+    ],
+    "links": {
+      "view": "https://github.com/prajjwalupadhyay/Hello-Doc-1.0",
+      "code": "https://github.com/prajjwalupadhyay/Hello-Doc-1.0"
+    }
+  },
+  {
+    "id": "real-estate-web-application",
+    "name": "Real Estate Web Application",
+    "desc": "Modern property listing and real estate discovery web app with interactive map search and property management.",
+    "fullDesc": "A full-stack Real Estate Web Application built with Next.js, TypeScript, Prisma, and Leaflet maps. Users can explore property listings with interactive geolocation maps, filter properties by price and location, view rich photo galleries, and manage property listings through authenticated user accounts.",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
     ],
     "category": "mern",
     "languages": [
-      { "name": "TypeScript", "percent": 62.1, "color": "#3178c6" },
-      { "name": "JavaScript", "percent": 24.3, "color": "#f1e05a" },
-      { "name": "CSS", "percent": 10.4, "color": "#563d7c" },
+      { "name": "TypeScript", "percent": 66.8, "color": "#3178c6" },
+      { "name": "JavaScript", "percent": 19.4, "color": "#f1e05a" },
+      { "name": "CSS", "percent": 10.6, "color": "#563d7c" },
       { "name": "HTML", "percent": 3.2, "color": "#e34c26" }
     ],
     "links": {
@@ -68,70 +91,31 @@
     }
   },
   {
-    "id": "weather-forecast-dash",
-    "name": "Real-Time Weather Dashboard",
-    "desc": "Dynamic weather forecast web application fetching live data, interactive radar maps, and 7-day predictions.",
-    "fullDesc": "An interactive weather monitoring application using OpenWeatherMap API and Geolocation API. It displays current conditions, hourly metrics, UV index, wind velocity, humidity level, 7-day precipitation forecasts, and interactive Leaflet map overlays for weather radar.",
-    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80",
-    "images": [
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=800&q=80"
-    ],
-    "category": "basicweb",
-    "languages": [
-      { "name": "JavaScript", "percent": 58.7, "color": "#f1e05a" },
-      { "name": "CSS", "percent": 25.1, "color": "#563d7c" },
-      { "name": "HTML", "percent": 16.2, "color": "#e34c26" }
-    ],
+    "id": "",
+    "name": "",
+    "desc": "",
+    "fullDesc": "",
+    "image": "",
+    "images": [],
+    "category": "",
+    "languages": [],
     "links": {
-      "view": "https://github.com/prajjwalupadhyay",
-      "code": "https://github.com/prajjwalupadhyay"
+      "view": "",
+      "code": ""
     }
   },
   {
-    "id": "cms-blog-system",
-    "name": "Wagenopedia Knowledge Hub",
-    "desc": "Automotive knowledge and vehicle specification platform with rich article management and comparisons.",
-    "fullDesc": "A comprehensive content management system and vehicle search portal. Built with PHP, MySQL, and modern JavaScript frontend modules, it includes side-by-side vehicle specs comparison, multi-faceted filtering, rich content editor, and administrative publishing tools.",
-    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80",
-    "images": [
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80"
-    ],
-    "category": "lamp",
-    "languages": [
-      { "name": "PHP", "percent": 48.9, "color": "#4F5D95" },
-      { "name": "JavaScript", "percent": 27.3, "color": "#f1e05a" },
-      { "name": "SQL", "percent": 14.5, "color": "#e38c00" },
-      { "name": "CSS", "percent": 9.3, "color": "#563d7c" }
-    ],
+    "id": "",
+    "name": "",
+    "desc": "",
+    "fullDesc": "",
+    "image": "",
+    "images": [],
+    "category": "",
+    "languages": [],
     "links": {
-      "view": "https://github.com/prajjwalupadhyay",
-      "code": "https://github.com/prajjwalupadhyay"
-    }
-  },
-  {
-    "id": "realtime-chat-app",
-    "name": "Pulse Real-Time Chat App",
-    "desc": "Real-time instant messaging web app featuring direct chats, group channels, media sharing, and status updates.",
-    "fullDesc": "Pulse Chat is a modern real-time communication platform built on Node.js, Express, Socket.io, and React. It supports end-to-end instant messaging, file/image sharing, online presence status indicators, typing animations, and custom theme modes.",
-    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=800&q=80",
-    "images": [
-      "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "category": "mern",
-    "languages": [
-      { "name": "JavaScript", "percent": 71.4, "color": "#f1e05a" },
-      { "name": "CSS", "percent": 16.8, "color": "#563d7c" },
-      { "name": "HTML", "percent": 11.8, "color": "#e34c26" }
-    ],
-    "links": {
-      "view": "https://github.com/prajjwalupadhyay",
-      "code": "https://github.com/prajjwalupadhyay"
+      "view": "",
+      "code": ""
     }
   }
 ]

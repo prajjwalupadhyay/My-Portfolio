@@ -48,7 +48,7 @@ function showProjects(projects) {
       }
     }
     let projectId = project.id || index;
-    let viewLink = `./details.html?id=${projectId}`;
+    let viewLink = (project.name && project.name.trim() !== "") ? `./details.html?id=${projectId}` : "#";
     let codeLink = (project.links && project.links.code && project.links.code.trim() !== "") ? project.links.code : "#";
 
     projectsHTML += `
